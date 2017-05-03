@@ -10,6 +10,7 @@ import co.edu.uniquindio.android.electiva.proyectofinaladmin.R;
 
 public class MenuPrincipal extends AppCompatActivity {
     private Button boton;
+    private Button boton2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,14 @@ public class MenuPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuPrincipal.this, SolicitudesInvestigadores.class);
+                startActivity(intent);
+            }
+        });
+        boton2 = (Button) findViewById(R.id.button2);
+        boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPrincipal.this, SolicitudesGrupos.class);
                 startActivity(intent);
             }
         });

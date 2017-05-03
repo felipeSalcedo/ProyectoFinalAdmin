@@ -5,6 +5,7 @@ import android.os.Parcelable;
 
 /**
  * Created by JUAN FELIPE on 02/05/2017.
+ * clase grupo el cual tendra unos atributos de clase
  */
 
 public class Investigador implements Parcelable {
@@ -16,6 +17,13 @@ public class Investigador implements Parcelable {
     private String email;
     private String linkCVLAC;
 
+    /**
+     * constructor de la apliacion este se usara para agregar o eliminar un grupo en una actividad
+     * @param nombre
+     * @param genero
+     * @param categoria
+     * @param formacion_Academica
+     */
     public Investigador(String nombre, String genero, String categoria, String formacion_Academica) {
         this.nombre = nombre;
         this.genero = genero;
@@ -23,6 +31,10 @@ public class Investigador implements Parcelable {
         this.formacion_Academica = formacion_Academica;
     }
 
+    /**
+     * metodo que se usa para escribir sobre esos datos
+     * @param in
+     */
     protected Investigador(Parcel in) {
         nombre = in.readString();
         genero = in.readString();

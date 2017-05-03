@@ -13,8 +13,8 @@ import co.edu.uniquindio.android.electiva.proyectofinaladmin.R;
 import co.edu.uniquindio.android.electiva.proyectofinaladmin.vo.Investigador;
 
 /**
- * esta actividad se encarga de la lista de investigadores ,devolviendo que investigadores van
- * aparecer en los radioButton ,ademas de realizar algunas acciones con los investigadores (aceptar,
+ * esta actividad se encarga de la lista de grupos ,devolviendo que grupos van
+ * aparecer en los radioButton ,ademas de realizar algunas acciones con los grupos (aceptar,
  * elimar y postergar)
  * @author JUAN FELIPE SALCEDO -JHON EIDER MARIN
  */
@@ -30,7 +30,7 @@ public class SolicitudesGrupos extends AppCompatActivity {
     private Button botonPostergar;
 
     /**
-     * Metodo que se encarga realizar las acciones con los investigadores(agregar,eliminar y postergar)
+     * Metodo que se encarga realizar las acciones con los grupos (agregar,eliminar y postergar)
      * @param savedInstanceState
      */
     @Override
@@ -60,8 +60,8 @@ public class SolicitudesGrupos extends AppCompatActivity {
         botonEliminar = (Button) findViewById(R.id.buttonEliminar);
         botonPostergar = (Button) findViewById(R.id.buttonPostergar);
         /**
-         * Metodo que se encarga realizar las accion de aceptar los investigadores ,se devolvera
-         * un mensaje diciendo que ell investigador se ha aceptado
+         * Metodo que se encarga realizar las accion de aceptar los grupos ,se devolvera
+         * un mensaje diciendo que ell grupo se ha aceptado
          */
         botonAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,8 +92,8 @@ public class SolicitudesGrupos extends AppCompatActivity {
         });
 
         /**
-         * Metodo que se encarga realizar las accion de eliminar los investigadores ,se devolvera
-         * un mensaje diciendo que ell investigador se ha eliminado
+         * Metodo que se encarga realizar las accion de eliminar los grupos ,se devolvera
+         * un mensaje diciendo que ell grupo se ha eliminado
          */
         botonEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,8 +122,8 @@ public class SolicitudesGrupos extends AppCompatActivity {
         });
 
         /**
-         * Metodo que se encarga realizar las accion de postergar los investigadores ,se devolvera
-         * un mensaje diciendo que ell investigador se ha postergado
+         * Metodo que se encarga realizar las accion de postergar los grupos ,se devolvera
+         * un mensaje diciendo que ell grupo se ha postergado
          */
         botonPostergar.setOnClickListener(new View.OnClickListener() {
             @Override

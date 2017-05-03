@@ -12,6 +12,12 @@ import java.util.ArrayList;
 import co.edu.uniquindio.android.electiva.proyectofinaladmin.R;
 import co.edu.uniquindio.android.electiva.proyectofinaladmin.vo.Investigador;
 
+/**
+ * esta actividad se encarga de la lista de investigadores ,devolviendo que investigadores van
+ * aparecer en los radioButton ,ademas de realizar algunas acciones con los investigadores (aceptar,
+ * elimar y postergar)
+ * @author JUAN FELIPE SALCEDO -JHON EIDER MARIN
+ */
 public class SolicitudesInvestigadores extends AppCompatActivity {
 
     private ArrayList<Investigador> investigadores;
@@ -26,6 +32,10 @@ public class SolicitudesInvestigadores extends AppCompatActivity {
 
     Button btn;
 
+    /**
+     * Metodo que se encarga realizar las acciones con los investigadores(agregar,eliminar y postergar)
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +64,10 @@ public class SolicitudesInvestigadores extends AppCompatActivity {
         botonEliminar = (Button) findViewById(R.id.buttonEliminar);
         botonPostergar = (Button) findViewById(R.id.buttonPostergar);
 
-
+        /**
+         * Metodo que se encarga realizar las accion de aceptar los investigadores ,se devolvera
+         * un mensaje diciendo que ell investigador se ha aceptado
+         */
         botonAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +96,10 @@ public class SolicitudesInvestigadores extends AppCompatActivity {
             }
         });
 
-
+        /**
+         * Metodo que se encarga realizar las accion de eliminar los investigadores ,se devolvera
+         * un mensaje diciendo que ell investigador se ha eliminado
+         */
         botonEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -109,6 +125,10 @@ public class SolicitudesInvestigadores extends AppCompatActivity {
                 }
             }
         });
+        /**
+         * Metodo que se encarga realizar las accion de postergar los investigadores ,se devolvera
+         * un mensaje diciendo que ell investigador se ha postergado
+         */
         botonPostergar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

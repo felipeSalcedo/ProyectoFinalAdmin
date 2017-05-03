@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen"
+    android:orientation="vertical"
+    tools:context="co.edu.uniquindio.android.electiva.proyectofinaladmin.activity.MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Bienvenid@ "
+        android:textAppearance="@style/Base.DialogWindowTitle.AppCompat"
+        android:textSize="35sp" />
+
+
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Para realizar actividades como administrador es necesario logearse "
+        android:textAppearance="@style/Base.DialogWindowTitle.AppCompat"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/Usuario1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el Usuario: "
+        android:textAppearance="@style/Base.DialogWindowTitle.AppCompat"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:gravity="center_horizontal"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/contra1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa la contraseña: "
+        android:textAppearance="@style/Base.DialogWindowTitle.AppCompat"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contraseña"
+        android:onClick="verValor"
+        android:text="Ingresar" />
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="co.edu.uniquindio.android.electiva.proyectofinaladmin.activity.MenuPrincipal">
+
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="¿Que desea realizar ? "
+        android:textAppearance="@style/Base.DialogWindowTitle.AppCompat"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_weight="0.66"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="277dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="46dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Lista de Solicitudes de investigdores "
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:layout_weight="0.66"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/button2"
+            android:layout_width="281dp"
+            android:layout_height="78dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="46dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Lista de Solicitudes de grupos de investigacion"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

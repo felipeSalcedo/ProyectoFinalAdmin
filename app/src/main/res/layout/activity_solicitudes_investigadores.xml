@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen"
+    android:orientation="vertical"
+    tools:context="co.edu.uniquindio.android.electiva.proyectofinaladmin.activity.SolicitudesInvestigadores">
+
+
+    <TextView
+        android:id="@+id/bienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Solicitudes de Investigadores "
+        android:textAppearance="@style/Base.DialogWindowTitle.AppCompat"
+        android:textSize="35sp" />
+
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Para realizar alguna accion seleccione el investigador "
+        android:textAppearance="@style/Base.DialogWindowTitle.AppCompat"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="168dp"
+            android:layout_height="341dp">
+
+            <LinearLayout
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:weightSum="1">
+
+
+            <Button
+                android:id="@+id/buttonAceptar"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="46dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="Aceptar"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/buttonEliminar"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="46dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="Eliminar"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/buttonPostergar"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="46dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="Postergar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

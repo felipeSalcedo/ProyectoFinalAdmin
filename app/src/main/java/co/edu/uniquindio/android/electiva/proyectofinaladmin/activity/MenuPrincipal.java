@@ -8,9 +8,21 @@ import android.widget.Button;
 
 import co.edu.uniquindio.android.electiva.proyectofinaladmin.R;
 
+/**
+ * @author JUAN FELIPE SALCEDO -JHON EIDER MARIN
+ * En esta clase lanza a la actividad del menu principal ,ademas de dirigir a
+ * otras actividades
+ */
 public class MenuPrincipal extends AppCompatActivity {
     private Button boton;
     private Button boton2;
+
+
+    /**
+     * metodo que lanza la actividad ,ademas realiza otras redirecciones
+     * ya sea a la actividad de solicitudes de investigadores o de grupos
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

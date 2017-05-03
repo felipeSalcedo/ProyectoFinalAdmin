@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/imagen"
     android:orientation="vertical"
-    tools:context="co.edu.uniquindio.android.electiva.proyectofinaladmin.activity.MainActivity">
+    tools:context="co.edu.uniquindio.android.electiva.proyectofinaladmin.activity.MainActivity"
+    android:weightSum="1">
 
 
 
@@ -65,12 +66,16 @@
 
     <Button
         android:id="@+id/boton"
-        android:layout_width="wrap_content"
+        android:layout_width="122dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/contraseña"
         android:onClick="verValor"
-        android:text="Ingresar" />
+        android:text="Ingresar"
+        android:textSize="19sp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="146dp"
+        android:layout_weight="0.06" />
 
 
 </LinearLayout>

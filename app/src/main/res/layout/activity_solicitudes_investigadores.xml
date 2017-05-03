@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:layout_marginStart="46dp"
-                android:background="@android:color/holo_green_dark"
+                android:background="@color/colorPrimary"
                 android:text="Aceptar"
                 android:textColor="@android:color/background_light" />
 
